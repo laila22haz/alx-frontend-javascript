@@ -12,8 +12,8 @@ export default async (promise) => {
 }
 */
 
-export default (promise) => {
-    return promise
+export default (promise) => 
+    promise
         .then(() => {
             return {status: 200, body: 'success'}
         }
@@ -23,5 +23,4 @@ export default (promise) => {
         })
         .finally (() => {
             console.log('Got a response from the API');
-        })
-}
+});
