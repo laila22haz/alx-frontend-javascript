@@ -1,5 +1,3 @@
-const getResponseFromAPI = () => {
-    return Promise.resolve();
-};
+const getResponseFromAPI = () => Promise.resolve();
 
 export default getResponseFromAPI;
