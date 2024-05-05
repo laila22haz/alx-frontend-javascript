@@ -6,10 +6,11 @@ const handleProfileSignup = async (firstName, lastName, fileName) => {
         signUpUser(firstName, lastName),
         uploadPhoto(fileName)
     ]);
+    //console.log(returnPromises);
     return returnPromises.map((item) => {
         return {
             status: item.status,
-            value: item.value || item.reason
+            value: item.value || String(item.reason)
         }
     }) 
 }
