@@ -4,7 +4,7 @@ export default (listStudent, city, newGrades) => {
         element.grade = 'N/A';
         newGrades.map(el => {
             if (el.studentId === element.id) element.grade = el.grade;
-        })
+        });
         return element;
-    })
-}
+    });
+};
