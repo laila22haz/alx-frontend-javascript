@@ -1,8 +1,12 @@
 export default (set, startString) => {
+    let resutl = [];
     for (const string of set) {
-        if (string.startsWith(startString)) {
-            return true;
+        if (string.startsWith(startString)) { 
+            resutl.push(string.slice(startString.length));
         }
-        console.log(string);
+        if (startString === '') {
+            return ' ';
+        }
     }
+    return resutl.join('-');
 }
