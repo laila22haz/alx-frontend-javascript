@@ -15,23 +15,3 @@ namespace Subjects {
   }
 }
 
-const teacher = {
-  firstName : "Laila",
-  lastName : "Hazmir",
-  experienceTeachingC : 12
-}
-
-console.log("*****CPP IS HERE******");
-const cpp = new Subjects.Cpp(teacher);
-console.log(cpp.getRequirements());
-console.log(cpp.getAvailableTeacher());
-
-console.log("*****REACT IS HERE******");
-const react = new Subjects.React(teacher);
-console.log(react.getRequirements());
-console.log(react.getAvailableTeacher());
-
-console.log("*****JAVA IS HERE******");
-const java = new Subjects.Java(teacher);
-console.log(java.getRequirements());
-console.log(java.getAvailableTeacher());
